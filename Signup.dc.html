@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+@font-face{font-family:'Montserrat Variable';font-style:normal;font-weight:100 900;font-display:swap;src:url('brand/fonts/montserrat-latin-wght-normal.woff2') format('woff2-variations')}
+@font-face{font-family:'Montserrat Variable';font-style:normal;font-weight:100 900;font-display:swap;src:url('brand/fonts/montserrat-latin-ext-wght-normal.woff2') format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+body{margin:0;background:#F4F2F5;color:#1F2430;font-family:'Montserrat Variable',Montserrat,'Noto Sans TC',-apple-system,'Segoe UI',Roboto,sans-serif;font-size:14px;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+a{color:#5E609E}a:hover{color:#45477A}
+</style>
+</helmet>
+<nav style="display:flex;align-items:center;gap:18px;padding:14px clamp(20px,5vw,64px);border-bottom:1px solid #E2E2E9;background:#fff;flex-wrap:wrap">
+  <a href="Home.dc.html" style="margin-right:auto;display:flex"><img src="brand/binnii-logo.svg" alt="Binnii" style="width:132px;height:auto;display:block"></a>
+  <span style="font-size:13px;color:#6B7280">Already have an account?</span>
+  <a href="#" style="color:#5E609E;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;border:1.5px solid #5E609E;border-radius:5px;padding:6.5px 15px" style-hover="background:#5E609E;color:#fff">Log in</a>
+</nav>
+<div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
+
+  <section data-screen-label="Signup" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:48px clamp(28px,6vw,90px);align-items:start;padding:64px 0 72px">
+    <div>
+      <h1 style="font-size:clamp(28px,3.5vw,36px);font-weight:700;letter-spacing:-0.02em;line-height:1.25;margin:0">Start your 14-day free trial</h1>
+      <div style="display:flex;flex-direction:column;gap:14px;margin-top:26px;font-size:14px;line-height:1.65">
+        <p style="margin:0"><strong>Full access to everything.</strong> <span style="color:#3E4453">The trial runs at the Pro allowance — 100 active children.</span></p>
+        <p style="margin:0"><strong>No plan selection now.</strong> <span style="color:#3E4453">Choose Go, Plus or Pro when the trial ends.</span></p>
+        <p style="margin:0"><strong>No charges during the trial.</strong> <span style="color:#3E4453">No base fee, no overage — nothing.</span></p>
+        <p style="margin:0"><strong>Set up for you.</strong> <span style="color:#3E4453">Your organization and first center are created from your details.</span></p>
+      </div>
+      <div style="background:#EEEEF2;border-radius:6px;padding:14px 16px;margin-top:26px;max-width:48ch">
+        <p style="font-size:13px;line-height:1.65;color:#3E4453;margin:0">If you don’t add a payment method, your account simply becomes read-only when the trial ends — we never delete your data without notice.</p>
+      </div>
+    </div>
+    <div style="background:#fff;border:1px solid #E2E2E9;border-radius:8px;padding:28px 26px;max-width:460px;box-shadow:0 8px 24px rgba(42,43,71,.08)">
+      <p style="display:flex;gap:16px;margin:0 0 22px;font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase">
+        <span style="color:#5E609E;border-bottom:2px solid #E77856;padding-bottom:3px">1 · Account</span>
+        <span style="color:#9AA0AE">2 · Organization</span>
+        <span style="color:#9AA0AE">3 · First center</span>
+      </p>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12.5px;font-weight:600;color:#3E4453">Your name</span><input type="text" placeholder="Alex Chen" style="font:inherit;font-size:13.5px;color:#1F2430;border:1px solid #CFD0DC;border-radius:5px;padding:9px 11px;background:#fff" style-focus="border-color:#5E609E;outline:2px solid #EEEEF2"></label>
+        <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12.5px;font-weight:600;color:#3E4453">Work email</span><input type="email" placeholder="you@yourcenter.ca" style="font:inherit;font-size:13.5px;color:#1F2430;border:1px solid #CFD0DC;border-radius:5px;padding:9px 11px;background:#fff" style-focus="border-color:#5E609E;outline:2px solid #EEEEF2"></label>
+        <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12.5px;font-weight:600;color:#3E4453">Password</span><input type="password" placeholder="At least 12 characters" style="font:inherit;font-size:13.5px;color:#1F2430;border:1px solid #CFD0DC;border-radius:5px;padding:9px 11px;background:#fff" style-focus="border-color:#5E609E;outline:2px solid #EEEEF2"></label>
+        <label style="display:flex;flex-direction:column;gap:6px"><span style="font-size:12.5px;font-weight:600;color:#3E4453">Country / region</span>
+          <select style="font:inherit;font-size:13.5px;color:#1F2430;border:1px solid #CFD0DC;border-radius:5px;padding:9px 11px;background:#fff"><option>Canada</option><option>United States</option></select>
+          <span style="font-size:11.5px;line-height:1.5;color:#6B7280">Sets your market and currency; your organization is bound to it at signup.</span>
+        </label>
+        <button type="button" style="font:inherit;font-size:14px;font-weight:600;color:#fff;background:#5E609E;border:0;border-radius:5px;padding:11px 16px;cursor:pointer" style-hover="background:#45477A">Create account →</button>
+        <p style="font-size:11.5px;line-height:1.5;color:#6B7280;margin:0;text-align:center">By continuing you agree to the Terms and Privacy Policy.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer style="background:#22233A;color:rgba(255,255,255,.7)">
+  <div style="max-width:1080px;margin:0 auto;padding:30px clamp(20px,5vw,64px);display:flex;align-items:center;gap:26px;flex-wrap:wrap;font-size:12.5px">
+    <img src="brand/binnii-logo-reverse.svg" alt="Binnii" style="width:110px;height:auto;margin-right:auto">
+    <a href="FAQ.dc.html" style="color:rgba(255,255,255,.7);text-decoration:none" style-hover="color:#fff">Help</a>
+    <span>Terms</span><span>Privacy</span><span>© Binnii by Haody</span>
+  </div>
+</footer>
+</x-dc>
+</body>
+</html>

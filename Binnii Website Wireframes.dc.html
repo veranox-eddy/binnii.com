@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&amp;display=swap" rel="stylesheet"><style>
+body{margin:0;background:#f0eee9;font-family:system-ui,sans-serif}
+a{color:#2a78d6}a:hover{color:#1c5aa8}
+.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}
+.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}
+.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px;text-decoration:none}
+.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+.dv-opts{display:flex;flex-wrap:wrap;gap:28px;align-items:flex-start}
+.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}
+.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px;text-decoration:none}
+.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.55)}
+.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}
+.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}
+.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}
+/* wireframe language */
+.wf{font-family:'Patrick Hand',cursive;color:#2b2f36;font-size:14px;line-height:1.35;background:#fff}
+.wf *{box-sizing:border-box}
+.b{border:1.6px solid #3a3f47;border-radius:4px}
+.bd{border:1.6px dashed #9aa0a8;border-radius:4px}
+.ximg{border:1.6px dashed #9aa0a8;border-radius:4px;background:linear-gradient(to top right,transparent calc(50% - .8px),#ccd1d8,transparent calc(50% + .8px)),linear-gradient(to bottom right,transparent calc(50% - .8px),#ccd1d8,transparent calc(50% + .8px));display:flex;align-items:center;justify-content:center;color:#9aa0a8;font-size:12px}
+.btn{display:inline-block;padding:3px 12px;background:#3a3f47;color:#fff;border-radius:4px;font-size:13px;white-space:nowrap}
+.btnc{background:#E77856}
+.ghost{display:inline-block;padding:2px 12px;border:1.6px solid #3a3f47;border-radius:4px;font-size:13px;white-space:nowrap}
+.pill{display:inline-block;border:1.4px solid #3a3f47;border-radius:99px;padding:1px 10px;font-size:12px}
+.h1{font-size:25px;font-weight:700;line-height:1.15}
+.h2{font-size:18px;font-weight:700;line-height:1.2}
+.mut{color:#7a808a;font-size:12.5px}
+.note{color:#E77856;font-size:12px;line-height:1.25}
+.tl{height:7px;background:#dfe2e7;border-radius:4px}
+.nav{display:flex;align-items:center;gap:13px;padding:9px 14px;border-bottom:1.6px solid #3a3f47;font-size:13px}
+.logo{font-weight:700;font-size:16px;letter-spacing:.5px}
+.logo i{color:#E77856;font-style:normal}
+.sec{padding:16px 18px}
+.row{display:flex;gap:10px}
+.col{display:flex;flex-direction:column;gap:8px}
+.grow{flex:1}
+.ctr{text-align:center}
+.foot{border-top:1.6px solid #3a3f47;padding:10px 14px;display:flex;gap:16px;font-size:12px;color:#7a808a}
+.plan{border:1.6px solid #3a3f47;border-radius:6px;padding:10px 12px;flex:1;display:flex;flex-direction:column;gap:6px}
+.price{font-size:22px;font-weight:700}
+.faqrow{border:1.6px solid #3a3f47;border-radius:4px;padding:6px 10px;display:flex;justify-content:space-between;align-items:center}
+</style></helmet>
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Binnii.com — public site wireframes (desktop + mobile, professional SaaS tone)</span></div>
+<div class="dv-opts">
+
+<div class="dv-opt" id="1a"><div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Homepage — classic product-led</div>
+<div class="dv-card wf" style="width:760px">
+<div class="nav"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span>Features</span><span>Pricing</span><span>About</span><span>FAQ</span><span class="ghost">Log in</span><span class="btn btnc">Start free trial</span></div>
+<div class="sec row" style="align-items:center;gap:20px">
+  <div class="col" style="flex:1.1;gap:10px">
+    <span class="pill">Childcare management, one plan per organization</span>
+    <div class="h1">Run your childcare centers.<br>Pay only for active children.</div>
+    <div class="mut">No per-location, per-classroom, per-parent or per-staff fees. Every plan has every feature.</div>
+    <div class="row"><span class="btn btnc">Start 14-day free trial</span><span class="ghost">See pricing</span></div>
+    <div class="mut" style="font-size:11.5px">Full access during trial · no plan selection required</div>
+  </div>
+  <div class="ximg" style="flex:1;height:190px">app dashboard screenshot</div>
+</div>
+<div class="sec row" style="border-top:1.6px solid #3a3f47;border-bottom:1.6px solid #3a3f47;justify-content:space-around;padding:10px 18px">
+  <span class="mut">✓ Attendance &amp; kiosk</span><span class="mut">✓ Daily reports</span><span class="mut">✓ Family billing</span><span class="mut">✓ Enrollment &amp; waitlist</span><span class="mut">✓ Staff scheduling</span>
+</div>
+<div class="sec">
+  <div class="h2 ctr">Built for every size of childcare business</div>
+  <div class="row" style="margin-top:10px">
+    <div class="b col" style="flex:1;padding:10px"><div class="ximg" style="height:56px">icon</div><b>Home daycares</b><div class="tl"></div><div class="tl" style="width:70%"></div><span class="mut">from $10/mo · 10 children incl.</span></div>
+    <div class="b col" style="flex:1;padding:10px"><div class="ximg" style="height:56px">icon</div><b>Growing centers</b><div class="tl"></div><div class="tl" style="width:70%"></div><span class="mut">$30/mo · 40 children incl.</span></div>
+    <div class="b col" style="flex:1;padding:10px"><div class="ximg" style="height:56px">icon</div><b>Multi-center orgs</b><div class="tl"></div><div class="tl" style="width:70%"></div><span class="mut">$70/mo · 100 children incl., shared across centers</span></div>
+  </div>
+</div>
+<div class="sec row" style="align-items:center;gap:20px">
+  <div class="ximg" style="flex:1;height:130px">feature screenshot</div>
+  <div class="col" style="flex:1"><div class="h2">Everything in every plan</div><div class="tl"></div><div class="tl"></div><div class="tl" style="width:60%"></div><span class="mut">Plans differ only by included active children — never by features. →&nbsp;Features</span></div>
+</div>
+<div class="sec ctr b" style="margin:0 18px 16px;padding:16px"><div class="h2">One plan for your entire organization</div><div class="mut">Add centers anytime — no extra location fees.</div><span class="btn btnc" style="margin-top:8px">Start free trial</span></div>
+<div class="foot"><span>© Binnii by Haody</span><span>Features</span><span>Pricing</span><span>FAQ</span><span>Terms</span><span>Privacy</span></div>
+</div></div>
+
+<div class="dv-opt" id="1b"><div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Homepage — pricing-forward, message-first</div>
+<div class="dv-card wf" style="width:760px">
+<div class="nav"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span>Features</span><span>Pricing</span><span>About</span><span>FAQ</span><span class="ghost">Log in</span><span class="btn btnc">Start free trial</span></div>
+<div class="sec ctr col" style="align-items:center;gap:10px;padding:26px 60px">
+  <div class="h1">Pay for active children —<br>not locations, classrooms, parents, or staff.</div>
+  <div class="mut" style="max-width:420px">One subscription covers your whole organization. All features, on every plan.</div>
+  <span class="btn btnc">Start 14-day free trial</span>
+</div>
+<div class="sec row" style="gap:12px;padding-top:0">
+  <div class="plan"><b>Go</b><span class="price">$10<span class="mut" style="font-size:12px">/mo</span></span><span class="mut">10 active children incl.</span></div>
+  <div class="plan" style="border-width:2.4px"><b>Plus</b><span class="price">$30<span class="mut" style="font-size:12px">/mo</span></span><span class="mut">40 active children incl.</span></div>
+  <div class="plan"><b>Pro</b><span class="price">$70<span class="mut" style="font-size:12px">/mo</span></span><span class="mut">100 active children incl.</span></div>
+</div>
+<div class="note" style="padding:0 18px">↑ mini plan strip links to Pricing; prices in CAD</div>
+<div class="sec">
+  <div class="h2 ctr">How billing works</div>
+  <div class="row" style="margin-top:10px">
+    <div class="col ctr" style="flex:1"><span class="pill">1</span><b>Count daily</b><span class="mut">Active children counted each day, deduplicated across centers</span></div>
+    <div class="col ctr" style="flex:1"><span class="pill">2</span><b>One base fee</b><span class="mut">Flat monthly fee per organization — never per center</span></div>
+    <div class="col ctr" style="flex:1"><span class="pill">3</span><b>Fair overage</b><span class="mut">Only above your included allowance, billed next month</span></div>
+  </div>
+</div>
+<div class="sec"><div class="h2 ctr">Everything you need to run the day</div>
+  <div class="row" style="flex-wrap:wrap;margin-top:10px">
+    <div class="bd" style="flex:1 1 30%;padding:8px"><b>Attendance &amp; kiosk</b><div class="tl" style="margin-top:5px"></div></div>
+    <div class="bd" style="flex:1 1 30%;padding:8px"><b>Daily reports</b><div class="tl" style="margin-top:5px"></div></div>
+    <div class="bd" style="flex:1 1 30%;padding:8px"><b>Family billing &amp; subsidies</b><div class="tl" style="margin-top:5px"></div></div>
+    <div class="bd" style="flex:1 1 30%;padding:8px"><b>Enrollment &amp; waitlist</b><div class="tl" style="margin-top:5px"></div></div>
+    <div class="bd" style="flex:1 1 30%;padding:8px"><b>Parent portal</b><div class="tl" style="margin-top:5px"></div></div>
+    <div class="bd" style="flex:1 1 30%;padding:8px"><b>Staff scheduling</b><div class="tl" style="margin-top:5px"></div></div>
+  </div>
+</div>
+<div class="sec ctr" style="padding:14px 90px"><div class="ximg" style="height:60px;margin-bottom:6px">customer quote / logo strip</div></div>
+<div class="foot"><span>© Binnii by Haody</span><span>Features</span><span>Pricing</span><span>FAQ</span><span>Terms</span><span>Privacy</span></div>
+</div></div>
+
+<div class="dv-opt" id="1c"><div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Pricing — three cards + billing rules</div>
+<div class="dv-card wf" style="width:760px">
+<div class="nav"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span>Features</span><span><b>Pricing</b></span><span>About</span><span>FAQ</span><span class="btn btnc">Start free trial</span></div>
+<div class="sec ctr col" style="align-items:center;gap:8px">
+  <div class="h1">Simple pricing, every feature included</div>
+  <div class="row b" style="border-radius:99px;overflow:hidden;padding:0"><span style="padding:3px 16px;background:#3a3f47;color:#fff">Monthly</span><span style="padding:3px 16px">Annual · save 20%</span></div>
+  <div class="note">toggle switches all prices ×0.8 (incl. overage rates)</div>
+</div>
+<div class="sec row" style="gap:12px;padding-top:4px">
+  <div class="plan"><b>Go</b><span class="mut">Home &amp; small daycares</span><span class="price">CAD $10<span class="mut" style="font-size:12px">/org/mo</span></span><span class="mut">Includes <b>10</b> active children</span><span class="mut">then $1 / child / mo</span><div class="tl"></div><div class="tl" style="width:75%"></div><span class="ghost ctr">Start free trial</span></div>
+  <div class="plan" style="border-width:2.4px"><span class="pill" style="align-self:flex-start;border-color:#E77856;color:#E77856">Most popular</span><b>Plus</b><span class="mut">Growing centers</span><span class="price">CAD $30<span class="mut" style="font-size:12px">/org/mo</span></span><span class="mut">Includes <b>40</b> active children</span><span class="mut">then $0.80 / child / mo</span><div class="tl"></div><div class="tl" style="width:75%"></div><span class="btn btnc ctr">Start free trial</span></div>
+  <div class="plan"><b>Pro</b><span class="mut">Large &amp; multi-center orgs</span><span class="price">CAD $70<span class="mut" style="font-size:12px">/org/mo</span></span><span class="mut">Includes <b>100</b> active children</span><span class="mut">then $0.60 / child / mo</span><div class="tl"></div><div class="tl" style="width:75%"></div><span class="ghost ctr">Start free trial</span></div>
+</div>
+<div class="sec ctr b" style="margin:0 18px;padding:10px"><b>Every plan includes every feature.</b><span class="mut"> Plans differ only by included active children and overage rate.</span></div>
+<div class="sec row" style="gap:16px">
+  <div class="col" style="flex:1"><div class="h2">What's an “active child”?</div><span class="mut">• Enrolled &amp; started, not yet withdrawn</span><span class="mut">• Counted daily, deduplicated across your centers</span><span class="mut">• Part-time or on vacation = still 1</span><span class="mut">• Waitlist &amp; applicants = never billed</span></div>
+  <div class="col" style="flex:1"><div class="h2">Good to know</div><span class="mut">• One bill per organization — add centers free</span><span class="mut">• Base fee up front, overage billed next month</span><span class="mut">• 14-day free trial, full access, no plan pick</span><span class="mut">• Prices in CAD, before tax &amp; card fees</span></div>
+</div>
+<div class="sec ctr" style="border-top:1.6px solid #3a3f47"><span class="mut">Questions about billing? → </span><span class="ghost">Read the FAQ</span></div>
+<div class="foot"><span>© Binnii by Haody</span><span>Terms</span><span>Privacy</span></div>
+</div></div>
+
+<div class="dv-opt" id="1d">
+</div>
+
+<div class="dv-opt" id="1e"><div class="dv-olabel"><a class="dv-oid" href="#1e">1e</a>Features — grouped zigzag</div>
+<div class="dv-card wf" style="width:760px">
+<div class="nav"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span><b>Features</b></span><span>Pricing</span><span>About</span><span>FAQ</span><span class="btn btnc">Start free trial</span></div>
+<div class="sec ctr"><div class="h1">Every feature. Every plan.</div><div class="mut">No feature gating — plans differ only by included active children.</div></div>
+<div class="sec row" style="justify-content:center;gap:8px;padding-top:0"><span class="pill">Run the day</span><span class="pill">Families</span><span class="pill">Enrollment</span><span class="pill">Staff</span><span class="pill">Scale</span><span class="note">← anchor jump-nav</span></div>
+<div class="sec row" style="align-items:center;gap:18px">
+  <div class="ximg" style="flex:1;height:120px">attendance / kiosk UI</div>
+  <div class="col" style="flex:1"><span class="pill">Run the day</span><div class="h2">Attendance, kiosk &amp; daily reports</div><span class="mut">Check-in/out kiosk, 15 entry types, health &amp; incident records, photos &amp; portfolios.</span><div class="tl" style="width:80%"></div></div>
+</div>
+<div class="sec row" style="align-items:center;gap:18px">
+  <div class="col" style="flex:1"><span class="pill">Families</span><div class="h2">Parent portal, messaging &amp; family billing</div><span class="mut">Email/SMS, announcements, invoices, subsidies, payments &amp; tax receipts.</span><div class="tl" style="width:80%"></div><span class="note">mark not-yet-shipped items “Coming soon” — never sell early</span></div>
+  <div class="ximg" style="flex:1;height:120px">parent portal UI</div>
+</div>
+<div class="sec row" style="align-items:center;gap:18px">
+  <div class="ximg" style="flex:1;height:120px">enrollment pipeline UI</div>
+  <div class="col" style="flex:1"><span class="pill">Enrollment</span><div class="h2">Registration, waitlist &amp; e-consents</div><span class="mut">Public application links, custom fields, document collection, capacity forecasting.</span><div class="tl" style="width:80%"></div></div>
+</div>
+<div class="sec row" style="align-items:center;gap:18px">
+  <div class="col" style="flex:1"><span class="pill">Staff · Scale</span><div class="h2">Scheduling, ratios &amp; multi-center view</div><span class="mut">Shifts, time-off, ratio warnings; head-office dashboard across all your centers.</span><div class="tl" style="width:80%"></div></div>
+  <div class="ximg" style="flex:1;height:120px">multi-center dashboard</div>
+</div>
+<div class="sec ctr b" style="margin:0 18px 16px;padding:14px"><b>See it with your own children &amp; classrooms</b><br><span class="btn btnc" style="margin-top:6px">Start 14-day free trial</span></div>
+<div class="foot"><span>© Binnii by Haody</span><span>Pricing</span><span>FAQ</span></div>
+</div></div>
+
+<div class="dv-opt" id="1f"><div class="dv-olabel"><a class="dv-oid" href="#1f">1f</a>About — brand story</div>
+<div class="dv-card wf" style="width:760px">
+<div class="nav"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span>Features</span><span>Pricing</span><span><b>About</b></span><span>FAQ</span><span class="btn btnc">Start free trial</span></div>
+<div class="sec ctr" style="padding:26px 90px"><div class="h1">Childcare software should charge for care, not for seats.</div><div class="mut" style="margin-top:6px">Why we price by active children — and nothing else.</div></div>
+<div class="sec row" style="gap:18px;align-items:center">
+  <div class="ximg" style="flex:1;height:140px">founding story photo</div>
+  <div class="col" style="flex:1.2"><div class="h2">Our story</div><div class="tl"></div><div class="tl"></div><div class="tl"></div><div class="tl" style="width:55%"></div><span class="mut" style="font-size:11.5px">Binnii by Haody — secondary endorsement, small</span></div>
+</div>
+<div class="sec"><div class="h2 ctr">What we believe</div>
+  <div class="row" style="margin-top:10px">
+    <div class="bd col" style="flex:1;padding:10px"><b>Fair pricing</b><span class="mut">Same features for a home daycare and a 10-center group.</span></div>
+    <div class="bd col" style="flex:1;padding:10px"><b>Safety is not an upsell</b><span class="mut">MFA &amp; audit on every plan.</span></div>
+    <div class="bd col" style="flex:1;padding:10px"><b>Data belongs to you</b><span class="mut">Export anytime; clear retention rules.</span></div>
+  </div>
+</div>
+<div class="sec ctr"><div class="ximg" style="height:90px">team photo strip</div></div>
+<div class="sec ctr b" style="margin:0 18px 16px;padding:14px"><b>Join the centers running on Binnii</b><br><span class="btn btnc" style="margin-top:6px">Start free trial</span></div>
+<div class="foot"><span>© Binnii by Haody</span><span>Contact</span><span>Terms</span><span>Privacy</span></div>
+</div></div>
+
+<div class="dv-opt" id="1g"><div class="dv-olabel"><a class="dv-oid" href="#1g">1g</a>Sign-up — trial start (no plan pick)</div>
+<div class="dv-card wf" style="width:760px">
+<div class="nav"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span class="mut">Already have an account?</span><span class="ghost">Log in</span></div>
+<div class="sec row" style="gap:24px;padding:22px 24px">
+  <div class="col" style="flex:1;gap:10px">
+    <div class="h1">Start your 14-day free trial</div>
+    <span class="mut">✓ Full access to everything — trial runs at the Pro allowance</span>
+    <span class="mut">✓ No plan selection now; choose Go/Plus/Pro when trial ends</span>
+    <span class="mut">✓ No charges during the trial</span>
+    <span class="mut">✓ Your organization &amp; first center are set up for you</span>
+    <div class="bd" style="padding:8px"><span class="note">reassurance: “If you don't add a payment method, your account simply becomes read-only — we never delete your data without notice.”</span></div>
+  </div>
+  <div class="b col" style="flex:1;padding:14px;gap:8px">
+    <div class="row ctr" style="justify-content:center;gap:6px"><span class="pill" style="background:#3a3f47;color:#fff">1 Account</span><span class="pill">2 Organization</span><span class="pill">3 First center</span></div>
+    <span class="mut">Your name</span><div class="bd" style="height:26px"></div>
+    <span class="mut">Work email</span><div class="bd" style="height:26px"></div>
+    <span class="mut">Password</span><div class="bd" style="height:26px"></div>
+    <span class="mut">Country / region</span><div class="bd" style="height:26px;display:flex;align-items:center;padding:0 8px">Canada ▾</div>
+    <div class="note">country sets market &amp; currency; org is bound to it at signup</div>
+    <span class="btn btnc ctr">Create account →</span>
+    <span class="mut ctr" style="font-size:11px">By continuing you agree to Terms &amp; Privacy</span>
+  </div>
+</div>
+<div class="foot"><span>© Binnii by Haody</span><span>Help</span></div>
+</div></div>
+
+<div class="dv-opt" id="1h"><div class="dv-olabel"><a class="dv-oid" href="#1h">1h</a>FAQ — categorized accordion</div>
+<div class="dv-card wf" style="width:760px">
+<div class="nav"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span>Features</span><span>Pricing</span><span>About</span><span><b>FAQ</b></span><span class="btn btnc">Start free trial</span></div>
+<div class="sec ctr col" style="align-items:center;gap:8px"><div class="h1">Frequently asked questions</div><div class="bd" style="width:340px;height:28px;display:flex;align-items:center;padding:0 10px">🔍 Search questions…</div></div>
+<div class="sec row" style="justify-content:center;gap:8px;padding-top:0"><span class="pill" style="background:#3a3f47;color:#fff">Billing</span><span class="pill">Active children</span><span class="pill">Free trial</span><span class="pill">Data &amp; security</span></div>
+<div class="sec col" style="gap:8px">
+  <div class="faqrow"><span>What counts as an “active child”?</span><b>▾</b></div>
+  <div class="bd" style="padding:8px 10px;margin-top:-4px"><div class="tl"></div><div class="tl" style="margin-top:5px"></div><div class="tl" style="margin-top:5px;width:60%"></div></div>
+  <div class="faqrow"><span>Do you charge per center or per staff account?</span><b>▸</b></div>
+  <div class="faqrow"><span>How does the annual discount work?</span><b>▸</b></div>
+  <div class="faqrow"><span>Is a child on vacation still billed?</span><b>▸</b></div>
+  <div class="faqrow"><span>What happens when my trial ends?</span><b>▸</b></div>
+  <div class="faqrow"><span>What happens if a payment fails?</span><b>▸</b></div>
+  <div class="faqrow"><span>Can I export my data?</span><b>▸</b></div>
+</div>
+<div class="sec ctr b" style="margin:0 18px 16px;padding:12px"><span class="mut">Still stuck? </span><span class="ghost">Email support</span></div>
+<div class="foot"><span>© Binnii by Haody</span><span>Terms</span><span>Privacy</span></div>
+</div></div>
+
+<div class="dv-opt" id="1i"><div class="dv-olabel"><a class="dv-oid" href="#1i">1i</a>Homepage — mobile</div>
+<div class="dv-card wf" style="width:300px">
+<div class="nav" style="gap:8px"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span class="btn btnc" style="font-size:12px">Trial</span><span class="ghost">☰</span></div>
+<div class="sec col ctr" style="gap:8px;align-items:center">
+  <div class="h1" style="font-size:21px">Pay for active children, nothing else.</div>
+  <div class="mut">One plan per organization. All features included.</div>
+  <span class="btn btnc">Start 14-day free trial</span>
+  <div class="ximg" style="width:100%;height:110px">app screenshot</div>
+</div>
+<div class="sec col" style="gap:8px;padding-top:4px">
+  <div class="b" style="padding:8px"><b>Home daycares</b><span class="mut"> · from $10/mo</span></div>
+  <div class="b" style="padding:8px"><b>Growing centers</b><span class="mut"> · $30/mo</span></div>
+  <div class="b" style="padding:8px"><b>Multi-center orgs</b><span class="mut"> · $70/mo</span></div>
+</div>
+<div class="sec col ctr" style="gap:6px"><div class="h2">How billing works</div><div class="tl" style="width:80%"></div><div class="tl" style="width:65%"></div><span class="note">3 steps stack vertically</span></div>
+<div class="foot" style="flex-wrap:wrap"><span>© Binnii</span><span>Pricing</span><span>FAQ</span></div>
+</div></div>
+
+<div class="dv-opt" id="1j"><div class="dv-olabel"><a class="dv-oid" href="#1j">1j</a>Pricing — mobile</div>
+<div class="dv-card wf" style="width:300px">
+<div class="nav" style="gap:8px"><span class="logo">binnii<i>✓</i></span><span class="grow"></span><span class="btn btnc" style="font-size:12px">Trial</span><span class="ghost">☰</span></div>
+<div class="sec col ctr" style="gap:8px;align-items:center;padding-bottom:8px">
+  <div class="h1" style="font-size:20px">Simple pricing</div>
+  <div class="row b" style="border-radius:99px;overflow:hidden;padding:0;font-size:12px"><span style="padding:2px 12px;background:#3a3f47;color:#fff">Monthly</span><span style="padding:2px 12px">Annual −20%</span></div>
+</div>
+<div class="sec col" style="gap:10px;padding-top:0">
+  <div class="plan" style="border-width:2.4px"><span class="pill" style="align-self:flex-start;border-color:#E77856;color:#E77856">Most popular</span><b>Plus</b><span class="price">CAD $30/mo</span><span class="mut">40 children incl. · then $0.80/child</span><span class="btn btnc ctr">Start free trial</span></div>
+  <div class="plan"><b>Go</b><span class="price">CAD $10/mo</span><span class="mut">10 children incl. · then $1/child</span><span class="ghost ctr">Start free trial</span></div>
+  <div class="plan"><b>Pro</b><span class="price">CAD $70/mo</span><span class="mut">100 children incl. · then $0.60/child</span><span class="ghost ctr">Start free trial</span></div>
+  <div class="note">popular plan first on mobile; cards stack, no table</div>
+</div>
+<div class="sec ctr b" style="margin:0 14px 14px;padding:10px"><b>All features on every plan</b><div class="mut" style="font-size:11.5px">Differences: allowance &amp; overage rate only</div></div>
+<div class="foot" style="flex-wrap:wrap"><span>© Binnii</span><span>FAQ</span></div>
+</div></div>
+
+</div>
+<p class="dv-next">Try next: "more like <a class="dv-oid" href="#1b">1b</a> but with the audience cards from <a class="dv-oid" href="#1a">1a</a>" · "add a live pricing calculator to <a class="dv-oid" href="#1c">1c</a>" · "hi-fi the winners in Binnii brand colors"</p>
+</section>
+</x-dc>
+</body>
+</html>

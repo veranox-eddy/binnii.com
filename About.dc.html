@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<script src="./image-slot.js"></script>
+<style>
+@font-face{font-family:'Montserrat Variable';font-style:normal;font-weight:100 900;font-display:swap;src:url('brand/fonts/montserrat-latin-wght-normal.woff2') format('woff2-variations')}
+@font-face{font-family:'Montserrat Variable';font-style:normal;font-weight:100 900;font-display:swap;src:url('brand/fonts/montserrat-latin-ext-wght-normal.woff2') format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+body{margin:0;background:#fff;color:#1F2430;font-family:'Montserrat Variable',Montserrat,'Noto Sans TC',-apple-system,'Segoe UI',Roboto,sans-serif;font-size:14px;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+a{color:#5E609E}a:hover{color:#45477A}
+</style>
+</helmet>
+<nav style="display:flex;align-items:center;gap:22px;padding:14px clamp(20px,5vw,64px);border-bottom:1px solid #E2E2E9;background:#fff;flex-wrap:wrap">
+  <a href="Home.dc.html" style="margin-right:auto;display:flex"><img src="brand/binnii-logo.svg" alt="Binnii" style="width:132px;height:auto;display:block"></a>
+  <a href="Features.dc.html" style="color:#3E4453;text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap" style-hover="color:#5E609E">Features</a>
+  <a href="Pricing.dc.html" style="color:#3E4453;text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap" style-hover="color:#5E609E">Pricing</a>
+  <a href="About.dc.html" aria-current="page" style="color:#5E609E;text-decoration:none;font-size:13.5px;font-weight:700;white-space:nowrap;border-bottom:2px solid #E77856;padding-bottom:2px">About</a>
+  <a href="FAQ.dc.html" style="color:#3E4453;text-decoration:none;font-size:13.5px;font-weight:600;white-space:nowrap" style-hover="color:#5E609E">FAQ</a>
+  <a href="#" style="color:#5E609E;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;border:1.5px solid #5E609E;border-radius:5px;padding:6.5px 15px" style-hover="background:#5E609E;color:#fff">Log in</a>
+  <a href="Signup.dc.html" style="background:#5E609E;color:#fff;text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;border-radius:5px;padding:8px 16px" style-hover="background:#45477A">Start free trial</a>
+</nav>
+<div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,64px)">
+
+  <section data-screen-label="About head" style="padding:64px 0 48px">
+    <h1 style="font-size:clamp(30px,4vw,40px);font-weight:700;letter-spacing:-0.02em;line-height:1.25;margin:0;max-width:24ch">Childcare software should charge for care, not for seats.</h1>
+    <p style="font-size:15px;line-height:1.7;color:#3E4453;margin:14px 0 0">Why we price by active children — and nothing else.</p>
+  </section>
+
+  <section data-screen-label="Story" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px clamp(28px,5vw,72px);align-items:center;padding:0 0 56px">
+    <div style="background:#fff;border:1px solid #E2E2E9;border-radius:8px;padding:10px">
+      <div style="aspect-ratio:3/2;border-radius:5px;overflow:hidden"><image-slot id="about-story" shape="rect" radius="5" placeholder="Drop a founding story photograph"></image-slot></div>
+    </div>
+    <div>
+      <span style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5E609E">Our story</span>
+      <p style="font-size:14px;line-height:1.75;color:#3E4453;margin:12px 0 0;max-width:52ch">Most childcare software bills the way enterprise software does: per location, per administrator, per parent login. Providers end up paying for their own growth twice. Binnii started from the other end — the only number that reflects the care actually being given is the number of children in your rooms today. So that is the only number on the bill.</p>
+      <p style="font-size:14px;line-height:1.75;color:#3E4453;margin:14px 0 0;max-width:52ch">We build in Canada, for Canadian providers first, with subsidy handling, tax receipts and CAD pricing designed in from the start rather than translated in later.</p>
+      <p style="font-size:12.5px;color:#6B7280;margin:16px 0 0">Binnii by Haody</p>
+    </div>
+  </section>
+
+  <section data-screen-label="Beliefs" style="padding:0 0 64px">
+    <h2 style="font-size:26px;font-weight:700;letter-spacing:-0.02em;margin:0;text-align:center">What we believe</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:28px">
+      <div style="background:#fff;border:1px solid #E2E2E9;border-radius:6px;padding:22px 20px">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:99px;background:#387BFE"></span>
+        <h3 style="font-size:16px;font-weight:700;margin:12px 0 8px">Fair pricing</h3>
+        <p style="font-size:13.5px;line-height:1.65;color:#3E4453;margin:0">A home daycare and a ten-center group run the same product. Plans differ only by how many active children are included — features are never the lever.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E2E2E9;border-radius:6px;padding:22px 20px">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:99px;background:#891A8D"></span>
+        <h3 style="font-size:16px;font-weight:700;margin:12px 0 8px">Safety is not an upsell</h3>
+        <p style="font-size:13.5px;line-height:1.65;color:#3E4453;margin:0">Multi-factor authentication and audit trails belong on every plan. We will not gate a security feature behind a bigger invoice.</p>
+      </div>
+      <div style="background:#fff;border:1px solid #E2E2E9;border-radius:6px;padding:22px 20px">
+        <span style="display:inline-block;width:10px;height:10px;border-radius:99px;background:#FFB804"></span>
+        <h3 style="font-size:16px;font-weight:700;margin:12px 0 8px">Your data belongs to you</h3>
+        <p style="font-size:13.5px;line-height:1.65;color:#3E4453;margin:0">Export anytime, in ordinary formats. If you stop paying, your account becomes read-only with clear notice — we never delete operational records without warning.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section data-screen-label="Close" style="background:#2A2B47">
+  <div style="max-width:1080px;margin:0 auto;padding:48px clamp(20px,5vw,64px);display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:space-between">
+    <h3 style="font-size:22px;font-weight:700;letter-spacing:-0.02em;margin:0;color:#fff">Join the centers running on Binnii</h3>
+    <a href="Signup.dc.html" style="background:#5E609E;color:#fff;text-decoration:none;font-size:14px;font-weight:600;border-radius:5px;padding:11px 22px" style-hover="background:#45477A">Start free trial</a>
+  </div>
+</section>
+
+<footer style="background:#22233A;color:rgba(255,255,255,.7)">
+  <div style="max-width:1080px;margin:0 auto;padding:30px clamp(20px,5vw,64px);display:flex;align-items:center;gap:26px;flex-wrap:wrap;font-size:12.5px">
+    <img src="brand/binnii-logo-reverse.svg" alt="Binnii" style="width:110px;height:auto;margin-right:auto">
+    <a href="Features.dc.html" style="color:rgba(255,255,255,.7);text-decoration:none" style-hover="color:#fff">Features</a>
+    <a href="Pricing.dc.html" style="color:rgba(255,255,255,.7);text-decoration:none" style-hover="color:#fff">Pricing</a>
+    <a href="FAQ.dc.html" style="color:rgba(255,255,255,.7);text-decoration:none" style-hover="color:#fff">FAQ</a>
+    <span>Terms</span><span>Privacy</span><span>© Binnii by Haody</span>
+  </div>
+</footer>
+</x-dc>
+</body>
+</html>
