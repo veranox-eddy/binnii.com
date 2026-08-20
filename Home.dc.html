@@ -8,7 +8,6 @@
 <body>
 <x-dc>
 <helmet>
-<script src="./image-slot.js"></script>
 <style>
 @font-face{font-family:'Montserrat Variable';font-style:normal;font-weight:100 900;font-display:swap;src:url('brand/fonts/montserrat-latin-wght-normal.woff2') format('woff2-variations')}
 @font-face{font-family:'Montserrat Variable';font-style:normal;font-weight:100 900;font-display:swap;src:url('brand/fonts/montserrat-latin-ext-wght-normal.woff2') format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
@@ -39,7 +38,7 @@ a{color:#5E609E}a:hover{color:#45477A}
       <p style="font-size:12.5px;color:#6B7280;margin:14px 0 0">Full access during the trial — no plan selection, no charges.</p>
     </div>
     <div style="background:#fff;border:1px solid #E2E2E9;border-radius:8px;padding:10px;box-shadow:0 8px 24px rgba(42,43,71,.08)">
-      <div style="aspect-ratio:3/2;border-radius:5px;overflow:hidden"><image-slot id="home-product" shape="rect" radius="5" placeholder="Drop an app dashboard screenshot"></image-slot></div>
+      <img src="screenshots/dashboard.webp" width="1200" height="621" alt="Binnii admin dashboard — attendance, activity and enrolment overview" style="display:block;width:100%;height:auto;border-radius:5px">
     </div>
   </section>
 </div>
@@ -77,7 +76,7 @@ a{color:#5E609E}a:hover{color:#45477A}
 
   <section data-screen-label="Product split" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:36px clamp(28px,5vw,72px);align-items:center;padding:24px 0 64px">
     <div style="background:#fff;border:1px solid #E2E2E9;border-radius:8px;padding:10px">
-      <div style="aspect-ratio:3/2;border-radius:5px;overflow:hidden"><image-slot id="home-features" shape="rect" radius="5" placeholder="Drop a feature screenshot"></image-slot></div>
+      <img src="screenshots/enrollment.webp" width="1200" height="621" alt="Binnii classroom roster — enrolled children, schedules and enrolment dates" style="display:block;width:100%;height:auto;border-radius:5px">
     </div>
     <div>
       <span style="font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5E609E">The product</span>
