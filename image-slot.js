@@ -9,7 +9,7 @@
  * is available, prefill the slot by default — write the photo's URL into
  * src (with credit/credit-href); the user can still fill or replace it
  * by dragging an image file onto it (or clicking to browse). The dropped
- * image persists across reloads via a .image-slots.state.json sidecar —
+ * image persists across reloads via an image-slots.state.json sidecar —
  * same read-via-fetch / write-via-window.omelette pattern as
  * design_canvas.jsx, so the filled slot shows on share links, downloaded
  * zips, and PPTX export. Outside the omelette runtime the slot is read-only.
@@ -91,7 +91,9 @@
 /* END USAGE */
 
 (() => {
-  const STATE_FILE = '.image-slots.state.json';
+  // 檔名刻意不以 '.' 開頭:正式站的 nginx deny 所有 dotfile(location ~ /\.),
+  // dotfile sidecar 會 403、整頁圖變空白。仍符合 host writeFile 的 *.state.json allowlist。
+  const STATE_FILE = 'image-slots.state.json';
 
   // Unsplash terms require visible attribution wherever their photos
   // display, and every link back to unsplash.com must carry utm referral
